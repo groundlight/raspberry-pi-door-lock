@@ -5,13 +5,6 @@ from picamera import PiCamera
 import os
 from slack_integration import send_slack_message
 
-# get the API token from the environment and raise an error if it's not set
-# api_token = "abc"  # os.environ.get("GROUNDLIGHT_API_TOKEN")
-
-# if not api_token:
-#     raise EnvironmentError(
-#         "No API token found. Set the API_TOKEN environment variable by running `export api_token=your_token_value`  before running this script."
-#     )
 
 
 camera = PiCamera()
