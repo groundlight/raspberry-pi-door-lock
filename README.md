@@ -68,6 +68,7 @@ This will return the IP address of the Raspberry Pi. If this does not work, you 
 	
 
 3. Set environment variables
+
 	a. Set your Groundlight api token (replace `api_example_token` with your actual token):  `export GROUNDLIGHT_API_TOKEN=api_example_token` . You can generate a token by visiting [https://app.groundlight.ai/reef/my-account/api-tokens](https://app.groundlight.ai/reef/my-account/api-tokens).   
 
 	b. (Optional) Set your Slack webhook URL, so the Raspberry Pi can post to Slack when it detects an issue:  `export SLACK_WEBHOOK_URL=https://hooks.slack.com/services/...` . Learn more about setting up a Slack webhook URL [here](https://api.slack.com/messaging/webhooks).
