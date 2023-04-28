@@ -44,6 +44,7 @@ This will return the IP address of the Raspberry Pi. If this does not work, you 
 1. Follow this [guide](https://www.youtube.com/watch?v=GImeVqHQzsE) to physically connect your Raspberry Pi Camera Module to your Raspberry Pi. 
 
 2. Enable the camera by doing the following on your Raspberry Pi:
+
 	a. `sudo raspi-config` opens a menu for configuring your Raspberry Pi. 
 
 	b. Select `Interface Options`
