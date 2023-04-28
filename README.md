@@ -61,6 +61,7 @@ This will return the IP address of the Raspberry Pi. If this does not work, you 
 ## Step 3:  Run Demo
 1. Clone this repository to your Raspberry Pi.
 2. Install python libraries needed for running the code.
+
 	a. Run `sudo apt-get install python3-picamera` to install the library necessary to interface with the camera.
 
 	b. Run `pip install -r requirements.txt` to install everything else.
