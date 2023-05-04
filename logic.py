@@ -5,6 +5,10 @@ from typing import Optional
 import datetime
 import pytz
 
+# define constants that represent when the office is open. Currently configured for 9am to 5pm PST
+OPEN_TIME = 9
+CLOSE_TIME = 17
+TIMEZONE = "US/Pacific"
 
 def is_door_locked(image: Image) -> Optional[bool]:
     """
@@ -40,9 +44,9 @@ def is_business_hours() -> bool:
     Return True if it's business hours, False otherwise
     """
     # groundlight office is in the US/Pacific timezone
-    now = datetime.datetime.now(pytz.timezone("US/Pacific"))
+    now = datetime.datetime.now(pytz.timezone(TIMEZONE))
 
-    # it is business hours if it is between 9am and 5pm on a weekday
-    if now.weekday() < 5 and 9 <= now.hour < 17:
+    # it is business hours if it is a weekday and between open and close 
+    if now.weekday() < 5 and OPEN_TIME <= now.hour < CLOSE_TIME:
         return True
     return False
